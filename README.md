@@ -29,12 +29,11 @@ git clone https://github.com/mrinalcodez/Angry-Birds.git
 ```
 ### 2. Import the Project into Your IDE
 **IntelliJ IDEA:**
-Open IntelliJ IDEA.
-
+- Open IntelliJ IDEA.
 - Select "Open Project" and navigate to the cloned repository folder.
 - Select the project folder and open it.
-**Eclipse:**
 
+**Eclipse:**
 - Open Eclipse.
 - Go to File > Import > Gradle > Existing Gradle Project.
 Navigate to the project directory and finish the setup.
