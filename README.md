@@ -43,8 +43,7 @@ After importing the project, you need to build it using Gradle.
 
 Using the Command Line: Run the following command in the root project folder:
 
-bash
-```
+```bash
 ./gradlew desktop:run
 ```
 
