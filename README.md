@@ -28,22 +28,28 @@ Clone this repository to your local machine using Git:
 git clone https://github.com/mrinalcodez/Angry-Birds.git
 ```
 ### 2. Import the Project into Your IDE
-#### IntelliJ IDEA:
+**IntelliJ IDEA:**
 Open IntelliJ IDEA.
 
-Select "Open Project" and navigate to the cloned repository folder.
-Select the project folder and open it.
-#### Eclipse:
+- Select "Open Project" and navigate to the cloned repository folder.
+- Select the project folder and open it.
+**Eclipse:**
 
-Open Eclipse.
-Go to File > Import > Gradle > Existing Gradle Project.
+- Open Eclipse.
+- Go to File > Import > Gradle > Existing Gradle Project.
 Navigate to the project directory and finish the setup.
-3. Build the Project
+### 3. Build the Project
 After importing the project, you need to build it using Gradle.
 
-Using the Command Line: Run the following command in the root project folder:
+1. Using the Command Line: Run the following command in the root project folder:
 
 ```bash
 ./gradlew desktop:run
 ```
-
+2. Using IntelliJ or Eclipse: You can use the "Run" configuration for the desktop project module, which will compile and launch the game for you.
+### 4. Running the game
+- **Command line**: Navigate to the project directory and run:
+```bash
+./gradlew desktop:run
+```
+- **IDE**: Select the desktop configuration and run the game.
