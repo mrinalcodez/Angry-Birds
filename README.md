@@ -25,4 +25,4 @@ Before running the game, ensure you have the following installed:
 Clone this repository to your local machine using Git:
 
 ```bash
-git clone 
+git clone https://github.com/mrinalcodez/Angry-Birds.git
