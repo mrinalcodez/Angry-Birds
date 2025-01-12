@@ -1,54 +1,33 @@
-# Angry Birds Clone in libGDX (Java)
+# test
 
-This is a simple Angry Birds clone game developed using libGDX, a popular framework for building cross-platform games. The game is designed to run on Windows, but libGDX allows you to extend it to other platforms as well. This project demonstrates basic game mechanics, including projectile physics, level design, and collision detection.
+A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
-## Features
+This project was generated with a template including simple application launchers and an empty `ApplicationAdapter` extension.
 
-- **Physics Engine**: Utilizes libGDX's Box2D physics for realistic projectile motion and object interactions.
-- **Levels**: Multiple levels with different obstacles and targets.
-- **Game Assets**: Custom graphics, sounds, and animations to resemble a bird-flinging experience.
-- **Windows Compatibility**: Designed to run on Windows, but can be extended to other platforms using libGDX.
+## Platforms
 
-## Prerequisites
+- `core`: Main module with the application logic shared by all platforms.
+- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
 
-Before running the game, ensure you have the following installed:
+## Gradle
 
-1. **Java Development Kit (JDK)** - Version 8 or higher. Download from [Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
-2. **Gradle** - The build tool used for managing dependencies and building the game. Download from [Gradle Official Website](https://gradle.org/install/).
-3. **libGDX** - Game development framework. You can download it from the [libGDX website](https://libgdx.badlogicgames.com/).
-4. **IDE (Integrated Development Environment)** - IntelliJ IDEA, Eclipse, or any Java IDE that supports Gradle.
+This project uses [Gradle](https://gradle.org/) to manage dependencies.
+The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
+Useful Gradle tasks and flags:
 
-## Setting Up the Project
+- `--continue`: when using this flag, errors will not stop the tasks from running.
+- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
+- `--offline`: when using this flag, cached dependency archives will be used.
+- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
+- `build`: builds sources and archives of every project.
+- `cleanEclipse`: removes Eclipse project data.
+- `cleanIdea`: removes IntelliJ project data.
+- `clean`: removes `build` folders, which store compiled classes and built archives.
+- `eclipse`: generates Eclipse project data.
+- `idea`: generates IntelliJ project data.
+- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
+- `lwjgl3:run`: starts the application.
+- `test`: runs unit tests (if any).
 
-### 1. Clone the Repository
-
-Clone this repository to your local machine using Git:
-
-```bash
-git clone https://github.com/mrinalcodez/Angry-Birds.git
-```
-### 2. Import the Project into Your IDE
-**IntelliJ IDEA:**
-- Open IntelliJ IDEA.
-- Select "Open Project" and navigate to the cloned repository folder.
-- Select the project folder and open it.
-
-**Eclipse:**
-- Open Eclipse.
-- Go to File > Import > Gradle > Existing Gradle Project.
-Navigate to the project directory and finish the setup.
-### 3. Build the Project
-After importing the project, you need to build it using Gradle.
-
-1. Using the Command Line: Run the following command in the root project folder:
-
-```bash
-./gradlew desktop:run
-```
-2. Using IntelliJ or Eclipse: You can use the "Run" configuration for the desktop project module, which will compile and launch the game for you.
-### 4. Running the game
-- **Command line**: Navigate to the project directory and run:
-```bash
-./gradlew desktop:run
-```
-- **IDE**: Select the desktop configuration and run the game.
+Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
+For example, `core:clean` removes `build` folder only from the `core` project.
